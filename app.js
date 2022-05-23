@@ -59,7 +59,7 @@ class App {
     //this.app.use("trust proxy");
     this.app.use(
       cors({
-        origin: "https://aubt-site.vercel.app/",
+        origin: "localhost:3000",
         credentials: true,
         origin: true,
       })
@@ -72,10 +72,7 @@ class App {
     this.app.use(cookieParser());
     this.app.disable("x-powered-by");
     this.app.use(function (req, res, next) {
-      res.header(
-        "Access-Control-Allow-Origin",
-        "https://aubt-site.vercel.app/"
-      );
+      res.header("Access-Control-Allow-Origin", "http://localhost:3000");
       res.header("Access-Control-Allow-Credentials", true);
       res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
       res.header(
