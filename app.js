@@ -52,7 +52,7 @@ class App {
       .catch((error) => {
         console.log(error);
       });
-    this.listen();
+    await this.listen();
   }
 
   initializeMiddlewares() {
