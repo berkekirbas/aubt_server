@@ -40,6 +40,10 @@ class App {
         {
           useNewUrlParser: true,
           useUnifiedTopology: true,
+
+          // remove poolSize or set according to your need
+          // read docs before setting poolSize
+          // default to 5
         }
       )
       .then(() => {
@@ -48,6 +52,7 @@ class App {
       .catch((error) => {
         console.log(error);
       });
+    this.listen();
   }
 
   initializeMiddlewares() {

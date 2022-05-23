@@ -4,8 +4,7 @@ const AuthRoute = require("./routes/auth.routes.js");
 
 const app = new App([new ModuleRoute(), new AuthRoute()]);
 async function start() {
-  // await app.connectToDB();
-  await app.listen();
+  await app.connectToDB();
 }
 start();
 module.exports = app;
