@@ -1,0 +1,29 @@
+{
+  "name": "aubt_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Berke Kırbaş",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.3",
+    "npm": "^8.10.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "node  index.js",
+    "dev": "nodemon --experimental-modules index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
